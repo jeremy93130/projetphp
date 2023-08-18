@@ -1,0 +1,78 @@
+form {
+    width: 800px;
+    margin: auto;
+    /* text-align: center; */
+    border: 2px solid gray;
+    height: auto;
+    box-shadow: 2px 2px 2px gray;
+    background-image: url(https://media.vogue.fr/photos/6487263d6fdcab17d3011e4c/1:1/w_1200,h_1200,c_limit/BAR-00238.jpg);
+    background-position: center;
+    font-family: sans-serif;
+}
+
+form>div {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form>div div {
+    width: 50%;
+    margin: auto;
+}
+
+label {
+    background-color: rgba(252, 33, 153, 0.534);
+    color: rgba(21, 5, 238, 0.829);
+    font-size: 20px;
+}
+
+label,
+input,
+select {
+    width: 150px;
+    margin: 10px 0;
+}
+
+h1 {
+    padding-top: 20px;
+}
+
+.envoyer {
+    border-radius: 10px;
+    padding: 5px 15px;
+    color: rgb(11, 11, 180);
+    font-weight: bold;
+    background-color: rgb(245, 147, 245);
+}
+
+#conditions {
+    font-size: 12px;
+    width: 100%;
+}
+
+#conditions {
+    width: auto;
+    height: auto;
+}
+
+fieldset {
+    display: flex;
+    margin: 10px 0;
+}
+
+fieldset>div {
+    width: 110px;
+}
+
+fieldset>div>label {
+    font-size: 15px;
+
+}
+
+fieldset>div>input {
+    width: 30px;
+
+}
