@@ -11,7 +11,7 @@
 <body>
 
 
-    <form method="POST" action="action.php">
+    <form method="POST" action="action.php" enctype="multipart/form-data">
         <h1>Mon Formulaire PHP</h1>
 
         <div>
@@ -28,8 +28,8 @@
                 <input type="text" name="firstname"><br>
             </div>
             <div>
-                <label for="lastName">lastName :</label><br>
-                <input type="text" name="lastName"><br>
+                <label for="lastname">lastName :</label><br>
+                <input type="text" name="lastname"><br>
             </div>
             <div>
                 <label for="email">E-Mail :</label><br>
@@ -61,18 +61,24 @@
                     <label for="italie">Italie</label>
                 </div>
             </fieldset>
-            <label for="story">Message : </label>
+            <div class="file">
+                <input type="file" name="image">
+                <button name="envoyer">Upload</button>
+            </div>
 
-            <textarea id="story" name="story" rows="5" cols="33">
-            </textarea><br>
+            <div class='message'>
+                <label for="story">Message : </label>
+
+                <textarea id="message" name="message" rows="5" cols="33">
+                    </textarea><br>
+
+            </div>
             <label id="conditions">J'accepte les conditions générales d'utilisation</label>
             <input type="checkbox" id="conditions" name="conditions" /><br>
 
-            <input type="submit" class="envoyer">
+            <input type="submit" class="envoyer" name="envoyer">
         </div>
-        <p>
-            <?php echo "Bonjour " . $_POST["firstName"] . " " . $_POST["lastName"] . " et Bienvenue" ?>
-        </p>
+
     </form>
 </body>
 

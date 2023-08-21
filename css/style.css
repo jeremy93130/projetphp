@@ -61,6 +61,7 @@ h1 {
 fieldset {
     display: flex;
     margin: 10px 0;
+    width: 390px;
 }
 
 fieldset>div {
@@ -75,4 +76,20 @@ fieldset>div>label {
 fieldset>div>input {
     width: 30px;
 
+}
+
+.message{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.message label {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.file {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
